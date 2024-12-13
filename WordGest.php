@@ -93,5 +93,11 @@ class WordGest {
             return !str_contains($word, $letter);
         });
     }
+
+    public function getRandomFilteredWord() {
+        $randIndex = array_rand($this->filteredWords);
+        return $this->filteredWords[$randIndex];
+
+    }
 }
 
